@@ -1,6 +1,6 @@
 CREATE DATABASE schoolDB;
 USE schoolDB;
-
+-- create a table
 CREATE TABLE student (
 	s_id INT PRIMARY KEY,
     s_name VARCHAR(50),
@@ -10,7 +10,10 @@ CREATE TABLE student (
     phone VARCHAR(15)
 );
 
+-- verify the table creation
 DESCRIBE student;
+
+-- view the columns
 SHOW COLUMNS FROM student;
 SHOW TABLES;
 SHOW DATABASES;

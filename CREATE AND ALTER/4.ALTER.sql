@@ -4,7 +4,7 @@ DESCRIBE student;
 DESCRIBE course;
 DESCRIBE enrollment;
 
-#insert a new student
+--insert a new student
 INSERT INTO student (s_name,email,phone) VALUES ("PRADEEP","pradeep@gmail.com","8650152081");
 SELECT * FROM student;
 
@@ -15,14 +15,15 @@ WHERE s_id=11;
 DELETE FROM student
 where s_id=11;
 
-#Add a new column
+-- Add a new column
 
 ALTER TABLE student ADD address VARCHAR(200);
 DESCRIBE student;
-#Drop a column
+
+-- Drop a column
 ALTER TABLE student DROP COLUMN address;
 
-#Rename a column 
+-- Rename a column
 ALTER TABLE student CHANGE phone mobile_number VARCHAR(15);
 
 
